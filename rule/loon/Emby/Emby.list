@@ -1,15 +1,45 @@
-# NAME: Emby
-# AUTHOR: justdoiting
-# REPO: https://github.com/justdoiting/emby-rules
-# UPDATED: 2025-06-06 09:18:50
-# DOMAIN: 3
-# DOMAIN-KEYWORD: 3
-# DOMAIN-SUFFIX: 45
-# PROCESS-NAME: 1
-# TOTAL: 52
+# =====================================================
+# 名称：Emby 分流规则
+# 作者：qiuqiu
+# 仓库：https://github.com/你的GitHub用户名/emby-rules
+# 更新时间：2025-10-06 10:00:00
+# 描述：整合 justdoiting 公共 Emby + qiuqiu 自建/登录 Emby 服务域名
+# 适用：Clash / Surge / Loon / Quantumult X
+# =====================================================
+
+# 匹配行为说明：
+# DOMAIN：完整域名匹配
+# DOMAIN-SUFFIX：后缀匹配（例如 *.emby.com）
+# DOMAIN-KEYWORD：关键词匹配
+# PROCESS-NAME：进程名匹配（仅移动端可用）
+
+# =====================================================
+# 一、自建 / 登录 Emby 服务域名（qiuqiu，精简后缀版）
+# =====================================================
+DOMAIN-SUFFIX,jingzhe.pro
+DOMAIN-SUFFIX,shrekmedia.org
+DOMAIN-SUFFIX,dpdns.org
+DOMAIN-SUFFIX,heisi.org
+DOMAIN-SUFFIX,28.al
+DOMAIN-SUFFIX,yixia.io
+DOMAIN-SUFFIX,zox.show
+DOMAIN-SUFFIX,cn2gias.uk
+DOMAIN-SUFFIX,zn.al
+DOMAIN-SUFFIX,ciallo.party
+DOMAIN-SUFFIX,aliz.work
+DOMAIN-SUFFIX,69yun69.com
+
+
+# =====================================================
+# 二、公共 Emby 服务（整理自 justdoiting）
+# =====================================================
 DOMAIN,emby.enjoyit.eu.org
 DOMAIN,emby.lcloud.wiki
 DOMAIN,notnetflix.cos.cat
+
+# =====================================================
+# 三、常见 Emby 公共服务域名后缀匹配
+# =====================================================
 DOMAIN-SUFFIX,123456.al
 DOMAIN-SUFFIX,285286.xyz
 DOMAIN-SUFFIX,agahk1.jmsooo.com
@@ -55,7 +85,10 @@ DOMAIN-SUFFIX,poloemby.xyz
 DOMAIN-SUFFIX,pornemby.club
 DOMAIN-SUFFIX,servers.xeton.dev
 DOMAIN-SUFFIX,xmsl.org
+
+# =====================================================
+# 四、关键词匹配（常见 Emby 域名关键字）
+# =====================================================
 DOMAIN-KEYWORD,emby.wtf
 DOMAIN-KEYWORD,jmsooo
 DOMAIN-KEYWORD,odysseyplus
-PROCESS-NAME,com.mb.android
