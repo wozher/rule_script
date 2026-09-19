@@ -1,0 +1,30 @@
+#!name=自定义去广告
+#!desc=合集插件：①pushplus短信转发页去广告+拦截百度统计 ②丰巢快递柜取件后去广告（解决"加载中"卡死）。需开启 MITM 并安装信任 Loon 证书
+#!author=WorkBuddy
+#!date=2026-09-19
+#!system=ios
+
+[Rule]
+# ===== pushplus 相关 =====
+# pushplus 页面加载的百度统计脚本
+DOMAIN,hm.baidu.com,REJECT
+# 广告图片兜底拦截（脚本失败时至少图不显示）
+URL,^https?:\/\/img\.pushplus\.plus\/ad\/,REJECT
+
+[Rewrite]
+# ===== 丰巢快递柜相关 =====
+# 拦截丰巢广告统计跳转
+^https?:\/\/dsp\.fcbox\.com\/adBrowse\/countRedirect - reject-200
+
+# 拦截58旗下广告页面
+^https?:\/\/z\d+\.58yuyue\.com\/h5\/ - reject-200
+
+# 拦截备用广告域名（yuyueshangmen.com）
+^https?:\/\/.*yuyueshangmen\.com\/ - reject-200
+
+[Script]
+# 移除 pushplus 短信页面 HTML 中的整个广告块（hr + 链接 + 图片）
+http-response ^https?:\/\/www\.pushplus\.plus\/shortMessage\/ script-path=https://raw.githubusercontent.com/wozher/rule_script/main/rule/loon/AdBlock/remove_pushplus_ad.js, requires-body=true, tag=移除pushplus广告, enabled=true
+
+[MITM]
+hostname = www.pushplus.plus, dsp.fcbox.com, *.58yuyue.com, yuyueshangmen.com
