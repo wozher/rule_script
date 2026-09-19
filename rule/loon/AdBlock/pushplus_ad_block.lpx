@@ -1,0 +1,17 @@
+#!name = pushplus 短信页面去广告
+#!desc = 移除 pushplus.plus 短信转发通知页（微信内打开）底部的广告横幅，并拦截页面加载的百度统计。需开启 MITM 并安装信任 Loon 证书
+#!author = WorkBuddy
+#!date = 2026-09-19
+
+[Rule]
+# pushplus 页面加载的百度统计脚本
+DOMAIN,hm.baidu.com,REJECT
+# 广告图片兜底拦截（脚本失败时至少图不显示）
+URL,^https?:\/\/img\.pushplus\.plus\/ad\/,REJECT
+
+[Script]
+# 移除页面 HTML 中的整个广告块（hr + 链接 + 图片）
+http-response ^https?:\/\/www\.pushplus\.plus\/shortMessage\/ script-path=https://raw.githubusercontent.com/wozher/rule_script/main/rule/loon/remove_pushplus_ad.js, requires-body=true, tag=移除pushplus广告, enabled=true
+
+[MITM]
+hostname = www.pushplus.plus
