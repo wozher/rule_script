@@ -11,7 +11,7 @@ URL,^https?:\/\/img\.pushplus\.plus\/ad\/,REJECT
 
 [Script]
 # 移除页面 HTML 中的整个广告块（hr + 链接 + 图片）
-http-response ^https?:\/\/www\.pushplus\.plus\/shortMessage\/ script-path=https://raw.githubusercontent.com/wozher/rule_script/main/rule/loon/remove_pushplus_ad.js, requires-body=true, tag=移除pushplus广告, enabled=true
+http-response ^https?:\/\/www\.pushplus\.plus\/shortMessage\/ script-path=https://raw.githubusercontent.com/wozher/rule_script/main/rule/loon/AdBlock/remove_pushplus_ad.js, requires-body=true, tag=移除pushplus广告, enabled=true
 
 [MITM]
 hostname = www.pushplus.plus
