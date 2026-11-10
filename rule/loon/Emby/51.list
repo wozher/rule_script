@@ -1,0 +1,63 @@
+# ------吃瓜网------#
+# 核心主站与爬虫通信 (PROXY)
+DOMAIN-SUFFIX,cgw666.com,PROXY
+DOMAIN-SUFFIX,51cg1.com,PROXY
+DOMAIN-SUFFIX,91cg1.com,PROXY
+
+# 封面海报图床 CDN
+DOMAIN-SUFFIX,gyezbp.cn,DIRECT
+
+# 流媒体 M3U8 索引服务
+DOMAIN-SUFFIX,ohjzmm.cn,DIRECT
+
+# 视频 TS 切片分发 CDN 节点群
+DOMAIN-SUFFIX,hhjd.mobi,DIRECT
+DOMAIN-SUFFIX,zhixunkeji.xyz,DIRECT
+DOMAIN-SUFFIX,doudou520.online,DIRECT
+
+
+# ------1024吃瓜------#
+# 核心主站与爬虫通信
+DOMAIN-SUFFIX,1024cg.com,DIRECT
+
+# 封面海报图床 CDN
+DOMAIN-SUFFIX,gyezbp.cn,DIRECT
+
+# 流媒体 M3U8 索引服务
+DOMAIN-SUFFIX,ohjzmm.cn,DIRECT
+
+# 视频 TS 切片分发 CDN 节点群
+DOMAIN-SUFFIX,hhjd.mobi,DIRECT
+DOMAIN-SUFFIX,zhixunkeji.xyz,DIRECT
+DOMAIN-SUFFIX,doudou520.online,DIRECT
+
+# ------抖音吃瓜------#
+# 核心主站与爬虫通信
+DOMAIN-SUFFIX,dychigua.com,DIRECT
+
+# 封面海报图床 CDN
+DOMAIN-SUFFIX,gyezbp.cn,DIRECT
+
+# 资源图床与视频 M3U8 索引服务
+DOMAIN-SUFFIX,tjacq.com,DIRECT
+
+# CloudFront 视频 TS 切片分发 CDN
+DOMAIN-SUFFIX,cloudfront.net,DIRECT
+
+# ------爱黑料------#
+# 核心主站与爬虫通信 (PROXY)
+DOMAIN-SUFFIX,aiheiliao1.com,PROXY
+
+# 封面海报图床与 M3U8 索引服务
+DOMAIN-SUFFIX,tjacq.com,DIRECT
+
+# CloudFront 视频 TS 切片分发 CDN
+DOMAIN-SUFFIX,cloudfront.net,DIRECT
+
+# ------57短剧------#
+# 双核心主站与 API 通信
+DOMAIN-SUFFIX,57duanju.org,DIRECT
+DOMAIN-SUFFIX,57cg4.com,DIRECT
+
+# 封面海报图床、M3U8 索引与视频 TS 切片 CDN
+DOMAIN-SUFFIX,chigua.media,DIRECT
