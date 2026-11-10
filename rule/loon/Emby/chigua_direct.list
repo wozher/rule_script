@@ -1,0 +1,20 @@
+# 吃瓜站点 - 直连规则集 (Direct)
+# 包含直连主站、图床、M3U8 索引及视频 CDN 节点
+
+# 核心主站
+DOMAIN-SUFFIX,1024cg.com
+DOMAIN-SUFFIX,dychigua.com
+DOMAIN-SUFFIX,57duanju.org
+DOMAIN-SUFFIX,57cg4.com
+
+# 封面海报图床 / 媒体索引
+DOMAIN-SUFFIX,gyezbp.cn
+DOMAIN-SUFFIX,ohjzmm.cn
+DOMAIN-SUFFIX,tjacq.com
+
+# 视频切片 CDN 节点
+DOMAIN-SUFFIX,hhjd.mobi
+DOMAIN-SUFFIX,zhixunkeji.xyz
+DOMAIN-SUFFIX,doudou520.online
+DOMAIN-SUFFIX,chigua.media
+DOMAIN-SUFFIX,cloudfront.net
