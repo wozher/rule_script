@@ -1,8 +1,8 @@
 # ------吃瓜网------#
 # 核心主站与爬虫通信 (PROXY)
-DOMAIN-SUFFIX,cgw666.com,PROXY
-DOMAIN-SUFFIX,51cg1.com,PROXY
-DOMAIN-SUFFIX,91cg1.com,PROXY
+DOMAIN-SUFFIX,cgw666.com
+DOMAIN-SUFFIX,51cg1.com
+DOMAIN-SUFFIX,91cg1.com
 
 # 封面海报图床 CDN
 DOMAIN-SUFFIX,gyezbp.cn,DIRECT
@@ -46,7 +46,7 @@ DOMAIN-SUFFIX,cloudfront.net,DIRECT
 
 # ------爱黑料------#
 # 核心主站与爬虫通信 (PROXY)
-DOMAIN-SUFFIX,aiheiliao1.com,PROXY
+DOMAIN-SUFFIX,aiheiliao1.com
 
 # 封面海报图床与 M3U8 索引服务
 DOMAIN-SUFFIX,tjacq.com,DIRECT
