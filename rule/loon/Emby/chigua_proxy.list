@@ -1,0 +1,7 @@
+# 吃瓜站点 - 代理规则集 (Proxy)
+# 包含需走代理访问的核心主站与通信接口
+
+DOMAIN-SUFFIX,cgw666.com
+DOMAIN-SUFFIX,51cg1.com
+DOMAIN-SUFFIX,91cg1.com
+DOMAIN-SUFFIX,aiheiliao1.com
